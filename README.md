@@ -39,4 +39,10 @@ This Python-based port scanner checks specified ports on one or more targets, id
 [*] Starting scan on 192.168.1.1 for ports 20-100...
 [+] Port 22 is OPEN on 192.168.1.1
     Service: SSH
-    Vulnerability Info: Ensure strong passwords and avoid outdated SSH versions.
+    Vulnerability Info: Ensure strong passwords and avoid outdated SSH versions.'''
+
+📦 Setup
+1️⃣ Clone the Repository
+'''bash
+git clone https://github.com/yourusername/portscanner-python.git
+cd portscanner-python'''

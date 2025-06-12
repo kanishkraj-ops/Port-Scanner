@@ -1,162 +1,42 @@
-# Port-Scanner
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Python Port Scanner</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f1117;
-      color: #e4e4e4;
-      margin: 0;
-      padding: 2rem;
-    }
+<h1 align="center">🔍 PRT Scanner: Vulnerability Enhanced Edition</h1>
 
-    h1, h2 {
-      color: #00ffae;
-    }
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=flat-square" />
+  <img src="https://img.shields.io/badge/Platform-Cross--Platform-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Use-Ethical%20Hacking-orange?style=flat-square" />
+</p>
 
-    code {
-      background-color: #1e1e2f;
-      color: #c0ffee;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
-      font-size: 0.95em;
-    }
+<p align="center">
+  <b>Multi-threaded port scanner with vulnerability info built in</b><br>
+  <i>Educational tool to understand open ports, common services, and their misconfigurations</i>
+</p>
 
-    pre {
-      background-color: #1e1e2f;
-      color: #f5f5f5;
-      padding: 1em;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
+---
 
-    .badge {
-      display: inline-block;
-      margin-right: 10px;
-      margin-bottom: 5px;
-    }
+## 📌 Overview
 
-    a {
-      color: #00f7ff;
-      text-decoration: none;
-    }
+This Python-based port scanner checks specified ports on one or more targets, identifies well-known services (FTP, SSH, RDP, etc.), and displays **vulnerability hints** commonly associated with them. Ideal for **ethical hackers**, **students**, and **pentesters** building foundational skills.
 
-    a:hover {
-      text-decoration: underline;
-    }
+---
 
-    .section {
-      margin-top: 2rem;
-    }
+## 🚀 Features
 
-    ul {
-      line-height: 1.7;
-    }
+✅ Fast multi-threaded scanning  
+✅ Scan **multiple IPs** in one go  
+✅ Detects common ports & services  
+✅ Shows known **vulnerability notes**  
+✅ Clean CLI interface with **colorized output**  
+✅ Auto-ranged ports: `80`, `1-1000`, etc.  
 
-    .screenshot {
-      margin-top: 1rem;
-      border-radius: 10px;
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #555;
-    }
+---
 
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
+## 🖥️ Demo
 
-  <h1>🔍 Python Port Scanner</h1>
-  <div class="badge">
-    <img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
-    <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status">
-  </div>
+```bash
+[*] Enter Targets to Scan (comma-separated): 192.168.1.1,192.168.1.5
+[*] Enter Ports to Scan (e.g., 80 or 1-1000): 20-100
 
-  <div class="section">
-    <h2>🛠 Features</h2>
-    <ul>
-      <li>Scan a target host for open TCP ports</li>
-      <li>Customizable port ranges</li>
-      <li>Fast and efficient using sockets</li>
-      <li>Clean, readable terminal output</li>
-      <li>Cross-platform: Windows, Linux, macOS</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>📁 Project Structure</h2>
-    <pre>
-port_scanner/
-├── portscanner.py        # Main script
-├── README.html           # This file
-└── requirements.txt      # Dependencies (if any)
-    </pre>
-  </div>
-
-  <div class="section">
-    <h2>🚀 Getting Started</h2>
-    <h3>🔧 Prerequisites</h3>
-    <p>Python 3.x installed on your system</p>
-
-    <h3>📦 Installation</h3>
-    <pre>
-git clone https://github.com/yourusername/port_scanner.git
-cd port_scanner
-
-# (Optional) Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-    </pre>
-  </div>
-
-  <div class="section">
-    <h2>▶️ Usage</h2>
-    <pre>
-python portscanner.py 192.168.1.1 1 1024
-    </pre>
-    <p>Arguments:</p>
-    <ul>
-      <li><code>target IP</code> – IP address to scan</li>
-      <li><code>start_port</code> – starting port number</li>
-      <li><code>end_port</code> – ending port number</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>📸 Screenshot</h2>
-    <p>Add a screenshot here to show it in action:</p>
-    <img src="your-screenshot.png" alt="Port Scanner Screenshot" class="screenshot">
-  </div>
-
-  <div class="section">
-    <h2>📜 License</h2>
-    <p>This project is licensed under the <strong>MIT License</strong> — see the <code>LICENSE</code> file for details.</p>
-  </div>
-
-  <div class="section">
-    <h2>🙋‍♂️ Author</h2>
-    <p><strong>Lucifer</strong><br>
-    💻 Ethical Hacker & Python Developer<br>
-    📫 Connect:
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </p>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Lucifer. All rights reserved.
-  </div>
-
-</body>
-</html>
+[*] Starting scan on 192.168.1.1 for ports 20-100...
+[+] Port 22 is OPEN on 192.168.1.1
+    Service: SSH
+    Vulnerability Info: Ensure strong passwords and avoid outdated SSH versions.

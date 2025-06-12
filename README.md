@@ -29,6 +29,8 @@ This Python-based port scanner checks specified ports on one or more targets, id
 ✅ Auto-ranged ports: `80`, `1-1000`, etc.  
 
 ---
+![Screenshot 2025-05-24 163326](https://github.com/user-attachments/assets/7328ad1c-b149-4a58-a498-111c5e77ffa9)
+
 
 ## 🖥️ Demo
 
